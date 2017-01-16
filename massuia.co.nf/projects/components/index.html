@@ -1,0 +1,160 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta id="meta" name="viewport" content="width=device-width; initial-scale=1.0" />
+<title>Portfolio | Lightning Components</title>
+<link href="../css/style.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="../PhotoSwipe/dist/photoswipe.css" type="text/css">
+<link rel="stylesheet" href="../PhotoSwipe/dist/default-skin/default-skin.css" type="text/css">
+</head>
+
+<body>
+	<header>
+    	<nav class="wrapper">
+        	<a id="logo" href="http://www.massuia.co.nf"><img src="../images/massuia-logo.png" alt=""></a>
+        	<a href="../index.html">Portfolio</a>
+             <a href="http://www.behance.net/massuia">Behance Cv</a>
+        </nav>
+    </header>
+    <section id="banner" style="background-color: #74be45; background-image: url(../images/components/banner.jpg);">
+    	<article class="wrapper">
+    		<figure id="hero" class="col-2"><img src="../images/components/hero.png"></figure>
+        	<div class="col-2">
+                <figure id="client-logo"><img src="../images/components/logo.png"></figure>
+                <h1>Lightning Components</h1>
+                <p>A series of nice-looking components to add easily in your Salesforce applications.</p>
+            </div>
+        </article>
+    </section>
+        <section class="wrapper">
+    	<ul id="tech">
+            <li class="tech tech-ui">Pixel Perfect Mockup</li>
+            <li class="tech tech-Prototype">Prototype</li>
+        	<li class="tech tech-specs">Specs & Assets</li>            
+        </ul>    	<!--
+    	<ul  id="metrics">
+        	<li class="metric-downloads"><span>+8K</span> Downloads</li>
+            <li class="metric-customers"><span>+13K</span> Clients</li>
+            <li class="metric-time"><span>+1K</span> Worked hours</li>
+        </ul>
+    	-->
+    </section>
+    <section class="wrapper gallery">
+        <h2>Gallery</h2>
+        <div class="mygallery">
+        <figure>
+        	<a href="../images/components/components7.png" data-size="1280x1080">
+            <img src="../images/components/components7.png" alt="Screenshot" class="screen">
+            </a>
+            <figcaption itemprop="caption description"><h2></h2><p>Add components to your project in the <span class="feat">App Builder</span>.</p></figcaption>
+		</figure>
+        <figure>
+        	<a href="../images/components/components5.png" data-size="1280x1080">
+            <img src="../images/components/components5.png" alt="Screenshot">
+            </a>
+            <figcaption itemprop="caption description"><h2></h2><p><span class="feat">Agenda.</span> Your tasks in a calendar.</p></figcaption>
+		</figure>
+        <figure>
+        	<a href="../images/components/components1.png" data-size="1280x1080">
+            <img src="../images/components/components1.png" alt="Screenshot">
+            </a>
+            <figcaption itemprop="caption description"><h2></h2><p>The components will adapt to any screen size.</p></figcaption>
+		</figure>
+        <figure>
+        	<a href="../images/components/components2.png" data-size="1280x1080">
+            <img src="../images/components/components2.png" alt="Screenshot">
+            </a>
+            <figcaption itemprop="caption description"><h2></h2><p><span class="feat">Weather.</span> A forecast for your Lightning app.</p></figcaption>
+		</figure>
+        <figure>
+        	<a href="../images/components/components9.png" data-size="1280x1080">
+            <img src="../images/components/components9.png" alt="Screenshot">
+            </a>
+            <figcaption itemprop="caption description"><h2></h2><p>(l) <span class="feat">Calculator</span> Component. (r) <span class="feat">Locator</span> Component.</p></figcaption>
+		</figure>
+        <figure>
+        	<a href="../images/components/components3.png" data-size="1280x1080">
+            <img src="../images/components/components3.png" alt="Screenshot">
+            </a>
+            <figcaption itemprop="caption description"><h2></h2><p>(l) <span class="feat">Datagrid</span> Component. (r) <span class="feat">Button</span> Component.</p></figcaption>
+		</figure>
+        <figure>
+        	<a href="../images/components/components10.png" data-size="1280x1080">
+            <img src="../images/components/components10.png" alt="Screenshot">
+            </a>
+            <figcaption itemprop="caption description"><h2></h2><p><p>(l) <span class="feat">Search</span> Component. (r) <span class="feat">Tasks</span> Component.</p></figcaption>
+		</figure>
+        <figure>
+        	<a href="../images/components/components6.png" data-size="1280x1080">
+            <img src="../images/components/components6.png" alt="Screenshot">
+            </a>
+            <figcaption itemprop="caption description"><h2></h2><p><p>Oktana <span class="feat">Stocks</span> Lightning Component.</p></figcaption>
+		</figure>
+        <figure>
+        	<a href="../images/components/components11.png" data-size="1280x1080">
+            <img src="../images/components/components11.png" alt="Screenshot">
+            </a>
+            <figcaption itemprop="caption description"><h2></h2><p><p>Oktana <span class="feat">Video</span> Lightning Component.</p></figcaption>
+		</figure>
+        <figure>
+        	<a href="../images/components/components8.png" data-size="1280x1080">
+            <img src="../images/components/components8.png" alt="Icons">
+            </a>
+            <figcaption itemprop="caption description"><h2></h2><p><p>Icons for the Lightning Components.</p></figcaption>
+		</figure>
+        </div>              	
+    </section>
+    <!-- PhotoSwipe Gallery-->
+    <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="pswp__bg"></div>
+        	<div class="pswp__scroll-wrap">
+                <div class="pswp__container">
+                        <div class="pswp__item"></div>
+                        <div class="pswp__item"></div>
+                        <div class="pswp__item"></div>
+                </div>
+            	<div class="pswp__ui pswp__ui--hidden">
+                <div class="pswp__top-bar">
+                    <!--  Controls are self-explanatory. Order can be changed. -->
+                    <div class="pswp__counter"></div>
+                    <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+                    <button class="pswp__button pswp__button--share" title="Share"></button>
+                    <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+                    <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                    <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+                    <!-- element will get class pswp__preloader--active when preloader is running -->
+                    <div class="pswp__preloader">
+                        <div class="pswp__preloader__icn">
+                          <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                    <div class="pswp__share-tooltip"></div> 
+                </div>
+                <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)"></button>
+                <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+                </button>
+                <div class="pswp__caption">
+                    <div class="pswp__caption__center"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section class="wrapper">
+    	<h2>More projects</h2>
+ <nav>
+            <a href="../jobscience/index.html" class="tile tile-jobscience">JobScience</a> 
+            <a href="../medzed/index.html" class="tile tile-medzed">MedZed</a> 
+            <a href="../index.html" class="tile tile-all">All Projects</a>
+        </nav>
+    </section>
+    <script src="../PhotoSwipe/dist/photoswipe.js"></script>
+    <script src="../PhotoSwipe/dist/photoswipe-ui-default.js"></script>
+    <script src="../js/main.js"></script>
+</body>
+</html>
