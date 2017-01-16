@@ -403,7 +403,7 @@ a:hover.white-text {color: rgba(255,255,255,.75);}
 		height: 0;
 		padding: 40px 0 0;
 		overflow: hidden;
-		background: url(../images/icons/oktana-logo.png) no-repeat center;
+		background: url(../images/icons/logo.png) no-repeat center;
 	}
 	#logo img {width: 0;}
 	.tile {
