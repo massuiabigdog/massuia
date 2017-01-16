@@ -229,7 +229,7 @@ a:hover.white-text {color: rgba(255,255,255,.75);}
 .tile-sf-cc {background-color: #1869af; background-image: url(../images/sellmore/logo.png); background-size: 108px 72px; background-position: center -4px;}
 .tile-sf-dev {background-color: #263e60; background-image: url(../images/developers/logo.png); background-size: 90px 60px; background-position: center 4px;}
 .tile-sf-mkt {background-color: #1869af; background-image: url(../images/marketing/logo.png); background-size: 108px 72px; background-position: center -4px;}
-.tile-medzed {background-color: #02b79c; background-image: url(../images/medzed/medzed-logo.png); background-size: 108px 72px; background-position: center -4px;}
+.tile-medzed {background-color: #02b79c; background-image: url(../images/medzed/medzed-logo.png);}
 .tile-chatter {background-color: #1fbbee; background-image: url(../images/icons/chatter-logo.png);}
 .tile-components {background-color: #73bf45; background-image: url(../images/icons/oktana-logo.png);}
 .tile-tact {background-color: #efa225; background-image: url(../images/icons/tactile-logo.png);}
