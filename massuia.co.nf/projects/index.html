@@ -1,0 +1,106 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta id="meta" name="viewport" content="width=device-width; initial-scale=1.0" />
+<title>UX Portfolio</title>
+<link href="css/style.css" rel="stylesheet" type="text/css">
+
+<script language="JavaScript">
+<!--hide
+
+var password;
+
+var pass1="floripa2016";
+
+password=prompt('Please enter your password to view this page!',' ');
+
+if (password==pass1)
+  alert('Password Correct! Click OK to enter!');
+else
+   {
+    window.location="http://www.massuia.co.nf";
+    }
+
+//
+</script>
+
+
+</head>
+<body>
+
+	<header>
+    
+    	<nav class="wrapper">
+        	<a id="logo" href="http://www.massuia.co.nf"><img src="images/massuia-logo.png" alt=""></a>
+        	<a href="http://www.massuia.co.nf.php">Home</a>
+            <a href="http://www.behance.net/massuia">Behance Cv</a>
+        </nav>
+    </header>
+        <section class="wrapper">
+    	<h1>Highlighted Projects</h1>
+	</section>  
+    <section id="projects" class="wrapper">
+       <nav class="grid">
+      <a href="chatter/index.html" class="tile tile-chatter filter-tech-ui filter-tech-wireframe filter-tech-apple filter-lightning">Chatter Desktop</a>
+        <a href="360/index.html" class="tile tile-360 filter-tech-pageflow filter-tech-js filter-tech-ui filter-tech-apple">Community Cloud 360</a>
+        <a href="jobscience/index.html" class="tile tile-jobscience white-text filter-tech-sf">Job Science</a>
+        <a href="components/index.html" class="tile tile-components filter-tech-sf filter-tech-ui filter-lightning">Lightning Components</a>
+        <a href="medzed/index.html" class="tile tile-medzed white-text filter-tech-sf filter-tech-js">MedZed</a>
+        <a href="oktana-design/index.html" class="tile tile-okt filter-tech-ui">Oktana Design Projects</a>
+      
+              <a href="developers/index.html" class="tile tile-sf-dev white-text filter-tech-sf filter-tech-ror filter-tech-ui">Salesforce Developers</a>
+          <a href="today/index.html" class="tile tile-sf white-text filter-tech-apple filter-tech-ui">Salesforce Today</a>
+        <a href="tact/index.html" class="tile tile-tact filter-tech-sf filter-tech-back filter-tech-js filter-tech-ui filter-tech-apple filter-tech-android">Tact for Salesforce</a>
+        <a href="timetracker/index.html" class="tile tile-timebook filter-tech-sf filter-tech-js filter-tech-ui">Time Tracker</a>
+
+      </nav>
+    </section>
+    <script src="../PhotoSwipe/dist/photoswipe.js"></script>
+    <script src="../PhotoSwipe/dist/photoswipe-ui-default.js"></script>
+    <script src="../js/main.js"></script>
+
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+
+    <!-- Manual
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/3.3.2/masonry.pkgd.min.js"></script>
+    <script>
+      var tiles = $('.grid .tile');
+      $('#tech').on('click', '.x`', function(e){
+        $(this).toggleClass('selected-tech', '');
+        var selected = $('#tech').find('.selected-tech').map(function(i, el){
+          return $(el).data('group');
+        });
+        selected = $.makeArray(selected).join('|');
+        var regex = new RegExp('(' + selected + ')');
+        tiles.each(function(i, el){
+          var _el = $(el);
+          if(regex.test(_el.data('groups'))) {
+            _el.fadeIn();
+          } else {
+            _el.fadeOut();
+          }
+        });
+      });
+    </script>
+    -->
+    
+    <!-- Isotope -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/2.2.2/isotope.pkgd.min.js"></script>
+    <script>
+    var iso = $('.grid').isotope({
+      // options
+      itemSelector: '.tile',
+    });
+    var tech = $('#tech');
+    tech.on( 'click', '.tech', function() {
+      $(this).toggleClass('selected-tech', '');
+      var filterValue = $.makeArray(tech.find('.selected-tech').map(function(i, el){
+        return $(el).data('group');
+      })).join('');
+
+      iso.isotope({ filter: filterValue });
+    });
+    </script>
+</body>
+</html>
